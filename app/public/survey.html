@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+<body>
+
+<style>
+    body {
+    background-image: url("/images/leaves.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }    
+</style>
+
+<div class="container">
+    <div class="row green lighten-2">
+        <div class="col s12 z-depth-1">
+            <h1 class="White-text ">Survey</h1>
+        </div>
+    </div>
+    <div class="container green lighten-4">
+    <div class="row">
+        <div class="input-field col s6">
+            <input value="Name" id="first_name" type="text" class="validate name">
+            <label class="active" for="first_name2">Name</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6">
+            <input value="link" id="picture" type="text" class="validate link">
+            <label class="active" for="first_name2">Link to picture(Required)</label>
+        </div>
+    </div>
+    <div class ="row">
+        <div class="col s6">
+            <h6>All answers are 1(Strongly disagree)-5(Strongly agree)</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Garrosh did nothing wrong.</h4>
+            <select id="test1">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Dylan is a beast.</h4>
+            <select id="test2">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Rap is crap.</h4>
+            <select id="test4">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Macs are overpriced.</h4>
+            <select id="test4">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Cake is better than pie.</h4>
+            <select id="test5">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Kids should be banned from playing M rated games.</h4>
+            <select id="test6">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Fortnite is overrated.</h4>
+            <select id="test7">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>This survey has too many video game statements.</h4>
+            <select id="test8">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Ketchup does not go on fries, you dip them.</h4>
+            <select id="test9">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <h4>Pineapple belongs on pizza.</h4>
+            <select id="test10">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="1">1</option>
+                <option value="1">1</option>
+                <option value="1">1</option>
+                <option value="1">1</option>
+            </select>
+        </div>
+    </div>
+
+    <button class="btn-large waves-effect waves-light submitBtn modal-trigger send" type="submit" name="action" data-target="modal1">Submit
+            <i class="material-icons right"></i>
+          </button>
+
+    <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h1>Best Match :</h1>
+                <h2 id="match"></h2>
+                <img id="matchImage">
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+
+
+<style>
+#largetext{
+    font-size: 12px;
+}
+
+
+
+</style>
+
+
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+    $(document).ready(function(){
+        $('.modal').modal();
+      });
+    var newEntry = {};
+    $(".send").on("click",function(){
+        newEntry = {"name" : $(".name").val().trim() , "photo" : $(".link").val().trim(), "scores" :[$("#test1").val().trim(),$("#test2").val().trim(),$("#test4").val().trim(),$("#test4").val().trim(),$("#test5").val().trim(),$("#test6").val().trim(),$("#test7").val().trim(),$("#test8").val().trim(),$("#test9").val().trim(),$("#test10").val().trim() ]}
+        $.post("/api/friends", newEntry ,function(res){
+            console.log(res)
+            $("#match").text(res.name)
+            $("#matchImage").attr("src",res.photo)
+        })
+      });
+
+
+
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
